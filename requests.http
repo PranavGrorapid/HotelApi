@@ -1,0 +1,94 @@
+### List all messages
+
+
+
+GET http://localhost:3000/hotel
+
+
+### Creating  messages
+ 
+
+POST http://localhost:3000/hotel
+Content-Type: application/json
+
+{
+  "name": "Historic Mansion Hotel",
+  "description": "Step back in time and experience the charm of a historic mansion turned hotel.",
+  "email": "reservations@historicmansionhotel.com",
+  "phoneNumber": "7736228299",
+  "category": "Arabian",
+  "address": "567 Willow Lane Bristol, TN 37620 United States"
+}
+
+
+
+
+
+
+
+###get a particular id
+
+GET http://localhost:3000/hotel/650bbee21c4adc5f3a196b66
+
+
+
+
+
+### updating hotels
+ 
+
+PUT http://localhost:3000/hotel/650bc8c8a46a075ade2efbf4
+Content-Type: application/json 
+
+{
+  "name": "Mountain Lodge Retreat-1",
+  "description": "Escape to the tranquility of the mountains in our cozy lodge with scenic views and hiking trails.",
+  "email": "reservations@mountainlodge.com",
+  "phone": "+1 (555) 789-1234",
+  "category": "Mountain Lodge",
+  "address": "456 Mountain View Road, Serenity Peaks, CO, 56789"
+}
+
+
+
+
+### deleting hotels
+ 
+
+DELETE http://localhost:3000/hotel/650c11fa789c1475c26deba6
+
+
+
+
+### Creating  user
+ 
+
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "userName": "Pro",
+  "email": "Pro2@gmail.com",
+  "password": "123456789"
+
+}
+
+
+
+
+
+
+
+
+### Login  user
+ 
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  
+  "email": "Pro1@gmail.com",
+  "password": "123456789"
+
+}
